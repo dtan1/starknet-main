@@ -1,5 +1,5 @@
 # Starknet Main #
-This is the main repo for describing / listing all the projects related to Starkness
+This is the main repo for describing the Starknet Contract and its related framework and toolings, as well as listing a series of projects for Starknet Contracts.
 <br></br>
 
 ## Motivation ##
