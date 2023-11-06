@@ -14,10 +14,21 @@ To create a series of Starknet contracts using Cairo V1. It covers the basic cod
 ## Starknet Contract ##
 - contract boilder plate / template
   (code block, and basic description)
-
+  
+<br></br>
+### Starknet toolings ###
+  - scarb
+    - build toolchain and package manager for Cairo and Starknet ecosystems.
+    - used to write, compile, and deploy Cairo and Starknet smart contracts.
+    - steps (code block / table ....)
+      - scarb new <project_name> :
+        - sets up a new project -
+          - generating a Scarb.toml configuration file and
+          - an initial src/lib.cairo contract file.
+      - scarb build :
+        - compiles your contract into Sierra code, an intermediate layer between high-level Cairo and compilation targets such as Cairo Assembly (CASM) 
 
 <br></br>
-
 ## Starknet Testing ##
 - unit testing
 - local testing
@@ -32,16 +43,6 @@ To create a series of Starknet contracts using Cairo V1. It covers the basic cod
 <br></br>
 - testing toolings :
 
-  - scarb
-    - build toolchain and package manager for Cairo and Starknet ecosystems.
-    - used to write, compile, and deploy Cairo and Starknet smart contracts.
-    - steps (code block / table ....)
-      - scarb new <project_name> :
-        - sets up a new project, generating a Scarb.toml configuration file and an initial src/lib.cairo contract file.
-      - scarb build :
-        - compiles your contract into Sierra code, an intermediate layer between high-level Cairo and compilation targets such as Cairo Assembly (CASM) 
-
-  <br></br>
   - starkli
     - CLI for interacting with starknet contracts
       - call (for view functions)
