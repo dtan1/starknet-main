@@ -44,15 +44,40 @@ To create a series of Starknet contracts using Cairo V1. It covers the basic cod
 - testing toolings :
 
   - starkli
-    - CLI for interacting with starknet contracts
-      - call (for view functions)
-      - invoke (for external functions)
+    - CLI for
+      - creating and managing accounts
+        - creates a JSON file that can be used to sign transactions
+      - declaring and deploying Starknet contracts
+        - class-hash
+          - creates a unique identifer for the a contract class.
+          - input : accepts a path to a JSON file containing the contract’s compiled code
+          - computed based on :
+            - contract's compiled Sierra code,
+            - the contract's ABI (Application Binary Interface), and
+            - the contract's version. 
+        - declare
+          - declaring new contract classes on StarkNet.
+            - i.e. registering the contract's compiled code on the StarkNet network
+              - reason : to separate the contract's code from its execution, which makes the network more scalable and efficient
+            - also involves signing a transaction with the contract owner's private key
+          - input : accepts a path to a JSON file containing the contract’s compiled code
+        - deploy
+          - deployed using the Universal Deployer Contract (UDC).
+          - The UDC is a special contract on StarkNet that allows any user to deploy new contracts to the network
+      - interacting with starknet contracts
+        - call (for view functions)
+        - invoke (for external functions)
      
   <br></br>
   - starknet foundry
     - a comprehensive toolkit for developing, testing, and deploying Starknet contracts.
-      - Forge - fast testing framework for Starknet contracts;
-      - Cast - an all-in-one tool for interacting with Starknet smart contracts
+      - Forge :
+        - fast testing framework for Starknet contracts
+          - write tests directly in Cairo and run them using Rust, similar to Ethereum's Foundry.
+          - enhance testing :
+            - simulate different conditions through cheat codes (allow developers to modify parameters or conditions to examine contract behavior in specific scenarios)
+      - Cast :
+        - CLI for interacting with Starknet smart contracts
 
 
 
