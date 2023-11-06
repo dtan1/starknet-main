@@ -4,7 +4,7 @@ This is the main repo for describing the Starknet Contract and its related frame
 
 ## Motivation ##
 To create a series of Starknet contracts using Cairo V1. It covers the basic codes in various areas of Starknet projects such as :
-- simple-bank
+- [simple-bank](https://github.com/dtan1/starknet-simplebank)
 - basic Defi contract (lending and borrowing)
 - back NFT
 - etc
